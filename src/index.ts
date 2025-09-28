@@ -19,6 +19,7 @@ import { user } from './rules/discord/user';
 import { spoiler } from './rules/spoiler';
 import { heading } from './rules/heading';
 import { subtext } from './rules/subtext';
+import { list } from './rules/list';
 import { text } from './rules/text';
 import { url } from './rules/url';
 import { em } from './rules/em';
@@ -43,6 +44,7 @@ export const rules: Record<string, ParserRule> = {
   spoiler,
   heading,
   subtext,
+  list,
 
   // discord specific
   user,

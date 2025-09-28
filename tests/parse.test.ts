@@ -572,6 +572,85 @@ describe('Parse', () => {
       },
     ]);
   });
+  test('GIVEN a list THEN parse the list', () => {
+
+    expect(parse('- Hello\n- World')).toEqual([
+      {
+        type: 'list',
+        ordered: false,
+        start: undefined,
+        items: [
+          [
+            {
+              type: 'text',
+              content: 'Hello',
+            },
+          ],
+          [
+            {
+              type: 'text',
+              content: 'World',
+            },
+          ],
+        ],
+      },
+    ]);
+
+    expect(parse('* Hello\n* World')).toEqual([
+      {
+        type: 'list',
+        ordered: false,
+        start: undefined,
+        items: [
+          [
+            {
+              type: 'text',
+              content: 'Hello',
+            },
+          ],
+          [
+            {
+              type: 'text',
+              content: 'World',
+            },
+          ],
+        ],
+      },
+    ]);
+
+    // TODO: Make these use the correct expected format aka text obj then br then text for multilines
+    // expect(parse('- Hello\n  World')).toEqual([
+    //   {
+    //     type: 'list',
+    //     ordered: false,
+    //     start: undefined,
+    //     items: [
+    //       [
+    //         {
+    //           type: 'text',
+    //           content: 'Hello\n  World',
+    //         },
+    //       ],
+    //     ],
+    //   },
+    // ]);
+    //
+    // expect(parse('- Weird Multiline\n  Stuff\n    \n    Yay')).toEqual([
+    //   {
+    //     type: 'list',
+    //     ordered: false,
+    //     start: undefined,
+    //     items: [
+    //       [
+    //         {
+    //           type: 'text',
+    //           content: 'Weird Multiline\n  Stuff\n    \n    Yay',
+    //         },
+    //       ],
+    //     ],
+    //   },
+    // ]);
+  })
 
   test('GIVEN a slash command mention THEN parse the slash command mention', () => {
     expect(parse('</command:123456789123456780>')).toEqual([
