@@ -9,8 +9,15 @@
     "type": "git",
     "url": "git+https://github.com/N5-Generation/discord-markdown-parser"
   },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "tsc -b src",
+    "prepare": "npm run build",
     "format": "prettier --write --cache \"{src,scripts,tests}/**/*.{mjs,ts,js}\"",
     "format:check": "prettier --check --cache \"{src,scripts,tests}/**/*.{mjs,ts,js}\"",
     "test": "vitest run",
