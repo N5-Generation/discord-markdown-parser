@@ -39,7 +39,7 @@ Designed to be used for [discord-html-transcripts](https://github.com/ItzDerock/
 ## Usage
 
 ```js
-import { parse } from 'discord-markdown-parser';
+import { parse } from 'discord-markdown-parser-fork';
 // or const { parse } = require('discord-markdown-parser');
 
 // input is a string
