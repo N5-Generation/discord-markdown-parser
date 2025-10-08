@@ -1,5 +1,5 @@
 ## Note:
-This repository is a fork that was simply made to support lists as the original repo doesn't. It is not intended to be "better" nor maintained. I also do not suggest using this to replace the original repo, the implementation of lists i've made isn't  
+This repository is a fork that was simply made to support lists as the original repo doesn't. It is not intended to be "better" nor maintained. I also do not suggest using this to replace the original repo, the implementation of lists i've made isn't perfect
 
 
 # `discord-markdown-parser`
