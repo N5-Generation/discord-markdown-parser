@@ -1,13 +1,13 @@
 {
-  "name": "discord-markdown-parser",
+  "name": "discord-markdown-parser-fork",
   "version": "1.3.0",
-  "description": "Parse discord-style markdown into an abstract syntax tree.",
+  "description": "Parse discord-style markdown into an abstract syntax tree. Forked from https://github.com/ItzDerock/discord-markdown-parser",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "homepage": "https://github.com/ItzDerock/discord-markdown-parser",
+  "homepage": "https://github.com/N5-Generation/discord-markdown-parser",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ItzDerock/discord-markdown-parser"
+    "url": "git+https://github.com/N5-Generation/discord-markdown-parser"
   },
   "scripts": {
     "build": "tsc -b src",

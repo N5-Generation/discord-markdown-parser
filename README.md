@@ -1,3 +1,7 @@
+## Note:
+This repository is a fork that was simply made to support lists as the original repo doesn't. It is not intended to be "better" nor maintained. I also do not suggest using this to replace the original repo, the implementation of lists i've made isn't  
+
+
 # `discord-markdown-parser`
 
 [![Discord](https://img.shields.io/discord/555474311637499955?label=discord)](https://discord.gg/rf5qN7C)
